@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="119" viewBox="0 0 119 119">
+  <g id="billing_add" data-name="billing add" transform="translate(-30 -31)">
+    <g id="Group_1" data-name="Group 1" opacity="0">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="119" height="119" transform="translate(30 31)" fill="#fff"/>
+    </g>
+    <g id="Group_314" data-name="Group 314" transform="translate(-187 -1147)">
+      <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(239 1188)" fill="#fff" stroke="#b3b3b3" stroke-width="2">
+        <rect width="57" height="83" rx="5" stroke="none"/>
+        <rect x="1" y="1" width="55" height="81" rx="4" fill="none"/>
+      </g>
+      <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(248 1197)" fill="#fff" stroke="#b3b3b3" stroke-width="2">
+        <rect width="40" height="66" stroke="none"/>
+        <rect x="1" y="1" width="38" height="64" fill="none"/>
+      </g>
+      <line id="Line_9" data-name="Line 9" x2="39.357" transform="translate(247.984 1220.085)" fill="none" stroke="#b3b3b3" stroke-width="2"/>
+      <line id="Line_10" data-name="Line 10" x2="39.357" transform="translate(247.984 1240.619)" fill="none" stroke="#b3b3b3" stroke-width="2"/>
+      <line id="Line_11" data-name="Line 11" x2="25.668" transform="translate(251.406 1208.107)" fill="none" stroke="#b3b3b3" stroke-width="2"/>
+      <line id="Line_13" data-name="Line 13" x2="25.668" transform="translate(251.406 1252.598)" fill="none" stroke="#b3b3b3" stroke-width="2"/>
+      <line id="Line_12" data-name="Line 12" x2="32.513" transform="translate(251.406 1232.063)" fill="none" stroke="#b3b3b3" stroke-width="2"/>
+      <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(271 1244)" fill="#fff" stroke="#b3b3b3" stroke-width="2">
+        <ellipse cx="21" cy="21.5" rx="21" ry="21.5" stroke="none"/>
+        <ellipse cx="21" cy="21.5" rx="20" ry="20.5" fill="none"/>
+      </g>
+      <g id="Group_282" data-name="Group 282" transform="translate(283.491 1257.303)">
+        <line id="Line_14" data-name="Line 14" x2="18" transform="translate(-0.491 8.697)" fill="none" stroke="#b3b3b3" stroke-width="2"/>
+        <line id="Line_15" data-name="Line 15" y2="17" transform="translate(9.509 -0.303)" fill="none" stroke="#b3b3b3" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="119" viewBox="0 0 119 119">
+  <g id="select_box" data-name="select box" transform="translate(-30 -31)">
+    <g id="Group_1" data-name="Group 1" opacity="0">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="119" height="119" transform="translate(30 31)" fill="#fff"/>
+    </g>
+    <g id="SELECT_BOX-2" data-name="SELECT BOX" transform="translate(-64.945 -1130.75)">
+      <path id="Path_6073" data-name="Path 6073" d="M126.973,1060.044h-57.4a9.307,9.307,0,0,0-5.717,2.553c-2.309,2.4-3.093,7.1-3.093,7.1v45.113a15.648,15.648,0,0,0,3.429,5.724,10.289,10.289,0,0,0,5.381,2.273H129.91s5.325.2,8.028-2.628,2.783-8.688,2.783-8.688v-40.587" transform="translate(50.467 132)" fill="none" stroke="#b3b3b3" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_6074" data-name="Path 6074" d="M163.718,1196.121l11.636,10.726,30.165-31.159" transform="translate(-8.864 12)" fill="none" stroke="#b3b3b3" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

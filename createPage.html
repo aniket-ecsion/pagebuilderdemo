@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Bootstrap 4 Dashboard Template">
+    <meta name="author" content="BootstrapDash">
+    <title>ClickFunal</title>
+    <!-- vendor css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <!-- azia CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- code editor -->
+    <link href="https://cdn.jsdelivr.net/npm/ace-builds@1.17.0/css/ace.min.css" rel="stylesheet">
+
+
+
+    <!-- <link rel="stylesheet" href="css/var.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/theme.css">
+
+
+</head>
+
+<body>
+    <div class="az-header">
+        <div class="container-fluid">
+            <div class="az-header-left">
+                <div class="az-header-item">
+                    <a href="#"> <i class="fa-solid fa-desktop"></i></a>
+                </div>
+                <div class="az-header-item">
+                    <a href="#"> <i class="fa-solid fa-tablet-screen-button"></i></a>
+                </div>
+                <div class="az-header-item">
+                    <a href="#"><i class="fa-solid fa-mobile-screen-button"></i></a>
+                </div>
+            </div>
+            <div class="az-header-menu">
+                <div class="az-header-menu-header">
+                    <a href="index.html" class="az-logo"><span></span> ClickFunal</a>
+                    <a href="" class="close">&times;</a>
+                </div>
+                <!-- az-header-menu-header -->
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link with-sub"><i class="fa-regular fa-square"></i> Section</a>
+                        <nav class="az-menu-sub">
+                            <a href="#" class="nav-link add-new-section">Add Section</a>
+                            <!--<a href="#" class="nav-link add-new-section"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add Section</a>-->
+                            <a href="#" class="nav-link">Manage</a>
+                        </nav>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link with-sub"><i class="fa-solid fa-diagram-next"></i> Row</a>
+                        <nav class="az-menu-sub">
+                            <a href="#" class="nav-link add-new-section-row" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">Add
+                                Row</a>
+                            <a href="#" class="nav-link">Manage</a>
+                        </nav>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="#" class="nav-link add_column"><i class="fa-solid fa-table-columns"></i> Columns</a>
+
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a href="" class="nav-link with-sub"><i class="fa-solid fa-vector-square"></i> Elements</a>
+                        <nav class="az-menu-sub">
+                            <a href="#" class="nav-link add_column_element" data-bs-toggle="modal" dipali
+                                data-bs-target="#exampleModal4">Add Elements</a>
+                            <a href="#" class="nav-link">Manage</a>
+                        </nav>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- az-header-menu -->
+            <div class="az-header-right az-header-menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link show_preview"><i class="fa-regular fa-eye"></i> Preview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link"><i class="fa-regular fa-floppy-disk"></i> Save</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- az-header-right -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- az-header -->
+    <div class="az-content az-content-dashboard">
+        <div class="az-content-body container-body" style="min-height: calc(100vh - 66px);">
+            <!-- section content goes here dynamically -->
+        </div>
+
+        <div class="modal  fade" id="mainPreviewDiv" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content preview_modal_content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Preview</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="padding: 0px;">
+                        <div class="preview-container-body hide">
+                            <!-- section content goes here dynamically -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- az-content-body -->
+
+        <div class="az-content-configration" id="right-panel" settings-for="" settings-pos=''>
+            <div class="sidepanel-inner d-flex flex-column">
+                <a href="#" id="sidepanel-close" class="sidepanel-close d-xl-none">×</a>
+                <nav class="app-nav app-nav-main flex-grow-1">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                                type="button" role="tab" aria-controls="home" aria-selected="true">Setting</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                type="button" role="tab" aria-controls="profile" aria-selected="false">Advance</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <ul class="app-menu list-unstyled accordion" id="menu-accordion">
+                                <li class="nav-item has-submenu settings-li" id="color_settings">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-5" aria-expanded="false" aria-controls="submenu-5">
+                                        <span class="nav-link-text">Color</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-5" class="submenu submenu-1 collapse  p-2 "
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Bg Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color " parent-key="color"
+                                                    id="bg-color" name="color" value="#bada55"
+                                                    onchange="setColor('color','color','bg-color',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Text Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color " parent-key="color"
+                                                    id="text-color" name="color" value="#bada55"
+                                                    onchange="setColor('color','color','text-color',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Border Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color " parent-key="color"
+                                                    id="border-color" name="color" value="#bada55"
+                                                    onchange="setColor('color','color','border-color',this)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item has-submenu settings-li" id="font_settings">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-6" aria-expanded="false" aria-controls="submenu-6">
+                                        <span class="nav-link-text">Font</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-6" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Font Family </div>
+                                            <div class="col">
+                                                <select class="form-select mb-1 setting_value_change" parent-key="font"
+                                                    id="font-family" name="font-family"
+                                                    onchange="setFontFamily('font-family','font','font-family',this)"
+                                                    aria-label="Default select example">
+                                                    <option selected value="Arial">Arial</option>
+                                                    <option value="Roboto">Roboto</option>
+                                                    <option value="Montserrat">Montserrat</option>
+                                                    <option value="Poppins">Poppins </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Font Weight </div>
+                                            <div class="col">
+                                                <select class="form-select mb-1 setting_value_change" parent-key="font"
+                                                    id="font-weight" name="font-weight"
+                                                    onchange="setFontFamily('font-weight','font','font-weight',this)"
+                                                    aria-label="Default select example">
+                                                    <option value="100">Thin</option>
+                                                    <option value="200">Light</option>
+                                                    <option value="400" selected>Normal</option>
+                                                    <option value="500">Medium</option>
+                                                    <option value="700">Bold</option>
+                                                    <option value="900">Bolder</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="audio-player-container">
+                                            <p class="property-lable">Font size <span class="float-end"
+                                                    id="fontValue">px</span></p>
+                                            <input type="range" class="w-100" parent-key="font" id="font-range"
+                                                name="font-range"
+                                                onchange="setFontFamily('font-range','font','font-range',this)">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item has-submenu settings-li" id="images_settings">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-7" aria-expanded="false" aria-controls="submenu-7">
+                                        <span class="nav-link-text">Images</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-7" class="submenu submenu-1 collapse p-2 "
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="">
+                                            <!-- <p class="property-lable">Background images </p> -->
+                                            <div class="row mb-1 align-items-center">
+                                                <div class="col fs-12">Background Images</div>
+                                                <div class="col">
+                                                    <input type="file" class="form-control mb-1"
+                                                        id="image_background_image" name="image_background_image"
+                                                        onchange="setImageProperties('image_background_image','image','image_background_image',this)"
+                                                        placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-1 align-items-center">
+                                                <div class="col fs-12">ALT Text</div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control mb-1" parent-key="image"
+                                                        id="image_alt_text" name="image_alt_text"
+                                                        placeholder="SEO ALT Text"
+                                                        onchange="setImageProperties('alt_text','image','image_alt_text',this)">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-1 align-items-center">
+                                                <div class="col fs-12">Image Width</div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control mb-1" parent-key="image"
+                                                        id="image_width" name="image_width" placeholder="PX"
+                                                        onchange="setImageProperties('width','image','image_width',this)">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-1 align-items-center">
+                                                <div class="col fs-12">Image Height</div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control mb-1" parent-key="image"
+                                                        id="image_height" name="image_height" placeholder="PX"
+                                                        onchange="setImageProperties('height','image','image_height',this)">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-1 align-items-center">
+                                                <div class="col fs-12">Link Url Target</div>
+                                                <div class="col">
+
+                                                    <select parent-key="image" id="image_url_target" name="url_target"
+                                                        class="form-select mb-1"
+                                                        onchange="setImageProperties('url_target','image','image_url_target',this)">
+                                                        <option value="_blank" selected="selected">Blank</option>
+                                                        <option value="_self">Self</option>
+                                                        <option value="_top">Top</option>
+                                                        <option value="_parent">Parent</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-1 align-items-center">
+                                                <div class="col fs-12">Background Size</div>
+                                                <div class="col">
+                                                    <select class="form-select mb-1" parent-key="image"
+                                                        id="image_background_size" name="image_background_size"
+                                                        class="form-select mb-1"
+                                                        onchange="setImageProperties('image_background_size','image','image_background_size',this)">
+                                                        <option value="auto" selected="selected">Auto</option>
+                                                        <option value="contain">Contain</option>
+                                                        <option value="cover">Cover</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-1 align-items-center">
+                                                <div class="col fs-12">Background Repeat</div>
+                                                <div class="col">
+                                                    <select class="form-select mb-1" parent-key="image"
+                                                        id="image_background_repeat" name="image_background_repeat"
+                                                        class="form-select mb-1"
+                                                        onchange="setImageProperties('image_background_repeat','image','image_background_repeat',this)">
+                                                        <option value="no-repeat" selected="selected">No-Repeat</option>
+                                                        <option value="repeat">Repeat</option>
+                                                        <option value="round">Round</option>
+                                                        <option value="space">Space</option>
+                                                        <option value="repeat-x">repeat-x</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-1 align-items-center">
+                                                <div class="col fs-12">Background Attachment</div>
+                                                <div class="col">
+                                                    <select class="form-select mb-1" parent-key="image"
+                                                        id="image_background_attachment"
+                                                        name="image_background_attachment" class="form-select mb-1"
+                                                        onchange="setImageProperties('image_background_attachment','image','image_background_attachment',this)">
+                                                        <option value="scroll" selected="selected">Scroll</option>
+                                                        <option value="fixed">Fixed</option>
+                                                        <option value="local">local</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item has-submenu settings-li" id="margine_padding_settings">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-4" aria-expanded="false" aria-controls="submenu-4">
+                                        <span class="nav-link-text">Margin & Padding</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <!--//nav-link-->
+                                    <div id="submenu-4" class="submenu submenu-1 collapse show "
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div id="audio-player-container" style="padding: 10px;">
+                                            <p class="property-lable">Margin <span> <i
+                                                        class="fa-solid fa-percent pre_icon "></i> <i
+                                                        class="fa-solid fa-p pre_icon"></i></span> <span
+                                                    class="float-end" id="marginValue">px</span></p>
+                                            <input type="range" class="w-100" id="margin_range"
+                                                parent-key="margin_padding" name="margin_range"
+                                                onchange="setMarginAndPadding('margin_range','margin_padding','margin_range',this)">
+
+                                            <div>
+
+                                            </div>
+
+                                            <div class="margin-control-content">
+
+                                                <div class="margin-group">
+                                                    <label for="Margin">Top</label>
+                                                    <input type="number" class="form-control mb-1" id="margin_top"
+                                                        parent-key="margin_padding" name="margin_top"
+                                                        onchange="setMarginAndPadding('margin_top','margin_padding','margin_top',this)">
+                                                </div>
+                                                <div class="margin-group">
+                                                    <label for="Margin">Bottom</label>
+                                                    <input type="number" class="form-control mb-1" id="margin_bottom"
+                                                        parent-key="margin_padding" name="margin_bottom"
+                                                        onchange="setMarginAndPadding('margin_bottom','margin_padding','margin_bottom',this)">
+                                                </div>
+                                                <div class="margin-group">
+                                                    <label for="Margin">Left</label>
+                                                    <input type="number" class="form-control mb-1" id="margin_left"
+                                                        parent-key="margin_padding" name="margin_left"
+                                                        onchange="setMarginAndPadding('margin_left','margin_padding','margin_left',this)">
+                                                </div>
+                                                <div class="margin-group">
+                                                    <label for="Margin">Right</label>
+                                                    <input type="number" class="form-control mb-1" id="margin_right"
+                                                        parent-key="margin_padding" name="margin_top"
+                                                        onchange="setMarginAndPadding('margin_right','margin_padding','margin_right',this)">
+                                                </div>
+                                                <!-- <div class="">
+                                                    <i class="fa-solid fa-lock lock_icon"></i>
+                                                </div> -->
+                                                <div style="clear:both">
+                                                </div>
+
+
+
+                                                <div class="divider"> </div>
+                                                <div id="audio-player-container " style=" margin-top: 10px;">
+                                                    <p class="property-lable">Padding <span> <i
+                                                                class="fa-solid fa-percent pre_icon "></i> <i
+                                                                class="fa-solid fa-p pre_icon"></i></span> <span
+                                                            class="float-end" id="paddingValue">px</span></p>
+                                                    <input type="range" class="w-100" id="padding_range"
+                                                        parent-key="margin_padding" name="padding_range"
+                                                        onchange="setMarginAndPadding('padding_range','margin_padding','padding_range',this)">
+                                                </div>
+                                                <div class="margin-control-content-2">
+
+                                                    <div class="margin-group">
+                                                        <label for="Padding">Top</label>
+                                                        <input type="number" class="form-control mb-1" id="padding_top"
+                                                            parent-key="margin_padding" name="padding_top"
+                                                            onchange="setMarginAndPadding('padding_top','margin_padding','padding_top',this)">
+                                                    </div>
+                                                    <div class="margin-group">
+                                                        <label for="Padding">Bottom</label>
+                                                        <input type="number" class="form-control mb-1"
+                                                            id="padding_bottom" parent-key="margin_padding"
+                                                            name="padding_bottom"
+                                                            onchange="setMarginAndPadding('padding_bottom','margin_padding','padding_bottom',this)">
+                                                    </div>
+                                                    <div class="margin-group">
+                                                        <label for="Padding">Left</label>
+                                                        <input type="number" class="form-control mb-1" id="padding_left"
+                                                            parent-key="margin_padding" name="padding_left"
+                                                            onchange="setMarginAndPadding('padding_left','margin_padding','padding_left',this)">
+                                                    </div>
+                                                    <div class="margin-group">
+                                                        <label for="Padding">Right</label>
+                                                        <input type="number" class="form-control mb-1"
+                                                            id="padding_right" parent-key="margin_padding"
+                                                            name="padding_right"
+                                                            onchange="setMarginAndPadding('padding_right','margin_padding','padding_right',this)">
+                                                    </div>
+                                                    <!-- <div class="">
+                                                        <i class="fa-solid fa-lock lock_icon"></i>
+                                                    </div> -->
+                                                    <div style="clear:both">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </li>
+
+                                <li class="nav-item has-submenu settings-li" id="size_position_setittings">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-2" aria-expanded="false" aria-controls="submenu-2">
+                                        <span class="nav-link-text">Size & Position</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-2" class="submenu submenu-1 collapse p-2 "
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Align </div>
+                                            <div class="col">
+                                                <div class="btn-group" role="group" aria-label="Basic example">
+                                                    <button type="button" class="btn btn-light" id="align_left"
+                                                        parent-key="size_posotion" name="align_left"
+                                                        onclick="setSizeAndPosition('align_left','size_posotion','align_left',this)"><i
+                                                            class="fa-solid fa-align-left"></i></button>
+                                                    <button type="button" class="btn btn-light" id="align_center"
+                                                        parent-key="size_posotion" name="align_center"
+                                                        onclick="setSizeAndPosition('align_center','size_posotion','align_center',this)"><i
+                                                            class="fa-solid fa-align-center"></i></button>
+                                                    <button type="button" class="btn btn-light" id="align_right"
+                                                        parent-key="size_posotion" name="align_right"
+                                                        onclick="setSizeAndPosition('align_right','size_posotion','align_right',this)"><i
+                                                            class="fa-solid fa-align-right"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="audio-player-container  ">
+                                            <p class="property-lable">Width <span> <i
+                                                        class="fa-solid fa-percent pre_icon "></i> <i
+                                                        class="fa-solid fa-p pre_icon"></i></span> <span
+                                                    class="float-end" id="widthValue">%</span></p>
+                                            <input type="range" class="w-100" id="size_posotion_range"
+                                                parent-key="size_posotion" name="size_posotion_range"
+                                                onchange="setSizeAndPosition('size_posotion_range','size_posotion','size_posotion_range',this)">
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <label>Section Width </label>
+                                            <div class="col">
+                                                <select id="edit-block-size" class="selectpicker form-select mb-1"
+                                                    parent-key="size_posotion" name="section_width"
+                                                    onchange="setSizeAndPosition('section_width','size_posotion','edit-block-size',this)">
+                                                    <option value="fullContainer"> Full Page</option>
+                                                    <option value="wideContainer"> Wide</option>
+                                                    <option value="midWideContainer"> Medium</option>
+                                                    <option value="midContainer"> Small</option>
+                                                    <option value="smallContainer"> Extra Small</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <label>Sticky </label>
+                                            <div class="col">
+                                                <select id="edit-block-sticky" class="selectpicker form-select mb-1"
+                                                    parent-key="size_posotion" name="section_sticky"
+                                                    onchange="setSizeAndPosition('section_sticky','size_posotion','edit-block-sticky',this)">
+                                                    <option value="nosticky"> No Stickiness</option>
+                                                    <option value="stickyTop"> Stick To Top On Scroll</option>
+                                                    <option value="stickyBottom"> Stick To Bottom On Load</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+
+                                </li>
+
+
+                                <li class="nav-item has-submenu settings-li" id="border_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-8" aria-expanded="false" aria-controls="submenu-8">
+                                        <span class="nav-link-text">Border</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-8" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Style</div>
+                                            <div class="col">
+                                                <select id="edit-block-style" class="form-select mb-1"
+                                                    parent-key="border" name="border_style"
+                                                    onchange="setBorder('border_style','border','edit-block-style',this)">
+                                                    <option value="none"> None</option>
+                                                    <option value="solid"> Solid</option>
+                                                    <option value="dashed"> Dashed</option>
+                                                    <option value="dotted"> Doted</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Size</div>
+                                            <div class="col">
+                                                <select id="edit-block-border-width" class="form-select mb-1"
+                                                    parent-key="border" name="border_width"
+                                                    onchange="setBorder('border_width','border','edit-block-border-width',this)">
+                                                    <option value="1px">1px</option>
+                                                    <option value="2px">2px</option>
+                                                    <option value="3px">3px</option>
+                                                    <option value="5px">5px</option>
+                                                    <option value="10px">10px</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color " name="color"
+                                                    value="#f60808" id="border_color" parent-key="border"
+                                                    name="border_color"
+                                                    onchange="setBorder('border_color','border','border_color',this)">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+
+
+                                            <div class="col fs-12">Border <span> <i
+                                                        class="fa-solid fa-percent pre_icon "></i> <i
+                                                        class="fa-solid fa-p pre_icon"></i></span></div>
+
+                                            <div class="margin-control-content-2">
+                                                <div class="margin-group">
+                                                    <label for="Border">Top</label>
+                                                    <input type="number" class="form-control mb-1" id="border_top"
+                                                        parent-key="border" name="border_top"
+                                                        onchange="setBorder('border_top','border','border_top',this)">
+                                                </div>
+                                                <div class="margin-group">
+                                                    <label for="Border">Bottom</label>
+                                                    <input type="number" class="form-control mb-1" id="border_bottom"
+                                                        parent-key="border" name="border_bottom"
+                                                        onchange="setBorder('border_bottom','border','border_bottom',this)">
+                                                </div>
+                                                <div class="margin-group">
+                                                    <label for="Border">Left</label>
+                                                    <input type="number" class="form-control mb-1" id="border_left"
+                                                        parent-key="border" name="border_left"
+                                                        onchange="setBorder('border_left','border','border_left',this)">
+                                                </div>
+                                                <div class="margin-group">
+                                                    <label for="Border">Right</label>
+                                                    <input type="number" class="form-control mb-1" id="border_right"
+                                                        parent-key="border" name="border_right"
+                                                        onchange="setBorder('border_right','border','border_right',this)">
+                                                </div>
+                                                <!-- <div class="">
+                                                        <i class="fa-solid fa-lock lock_icon"></i>
+                                                    </div> -->
+                                                <div style="clear:both">
+                                                </div>
+                                            </div>
+
+                                            <div id="audio-player-container " style="padding: 10px; margin-top: 10px;">
+                                                <p class="property-lable">Border Radius <span> <i
+                                                            class="fa-solid fa-percent pre_icon "></i> <i
+                                                            class="fa-solid fa-p pre_icon"></i></span> <span
+                                                        class="float-end" id="borderRadiusValue">40%</span></p>
+                                                <input type="range" class="w-100" id="border_range" parent-key="border"
+                                                    name="border_range"
+                                                    onchange="setBorder('border_range','border','border_range',this)">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li class="nav-item has-submenu settings-li" id="button_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-9" aria-expanded="false" aria-controls="submenu-9">
+                                        <span class="nav-link-text">Button</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-9" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Button Type </div>
+                                            <div class="col ">
+                                                <select class="form-select mb-1" id="button_type"
+                                                    class="form-control mb-1" parent-key="button" name="button_type"
+                                                    onchange="setButtonProperties('button_type','button','button_type',this)">
+                                                    <option selected value="button">Button</option>
+                                                    <option value="submit">Submit</option>
+                                                    <option value="reset">Reset</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Button Text</div>
+                                            <div class="col">
+                                                <input type="text" id="button_text" placeholder="Click to sign up"
+                                                    class="form-control mb-1" parent-key="button" name="button_text"
+                                                    onchange="setButtonProperties('button_text','button','button_text',this)">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Aria Label</div>
+                                            <div class="col">
+
+                                                <input type="text" id="button_arialabel" placeholder="Aria-Label"
+                                                    class="form-control mb-1" parent-key="button"
+                                                    name="button_arialabel"
+                                                    onchange="setButtonProperties('button_arialabel','button','button_arialabel',this)">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Bg Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color " id="button_bgcolor"
+                                                    name="button_bgcolor" value="#f60808" parent-key="button"
+                                                    onchange="setButtonProperties('button_bgcolor','button','button_bgcolor',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Text Color </div>
+                                            <div class="col"><input type="color" class="color-float-end"
+                                                    id="button_textcolor" name="button_textcolor" value="#bada55"
+                                                    parent-key="button"
+                                                    onchange="setButtonProperties('button_textcolor','button','button_textcolor',this)">
+                                            </div>
+
+                                        </div>
+                                        <!-- <div class="row mb-2 align-items-center">
+                                        <div class="col fs-12">
+                                            <h4 class="text-center">Hover</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-1 align-items-center">
+                                        <div class="col fs-12">Bg Color</div>
+                                        <div class="col">
+                                            <input type="color" class="float-end-color " name="color" value="#f60808">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-1 align-items-center">
+                                        <div class="col fs-12">Text Color </div>
+                                        <div class="col"><input type="color" class="color-float-end" name="color"
+                                                value="#bada55"> </div>
+                                    </div> -->
+                                    </div>
+
+
+
+
+                                </li>
+
+
+                                <li class="nav-item has-submenu settings-li" id="countdown_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-20" aria-expanded="false" aria-controls="submenu-20">
+                                        <span class="nav-link-text">Countdown</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-20" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Days</div>
+                                            <div class="col">
+                                                <input type="number" placeholder="Days" class="form-control mb-1"
+                                                    id="count_days" name="count_days" parent-key="countdown"
+                                                    onchange="setCountDownProperties('count_days','countdown','count_days',this)">
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Hours</div>
+                                            <div class="col">
+                                                <input type="number" placeholder="Hours" class="form-control mb-1"
+                                                    id="navbar_url_action" name="navbar_url_action"
+                                                    parent-key="countdown"
+                                                    onchange="setCountDownProperties('navbar_url_action','navbar','navbar_url_action',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Minutes</div>
+                                            <div class="col">
+                                                <input type="number" placeholder="Minutes" class="form-control mb-1"
+                                                    id="navbar_url_action" name="navbar_url_action"
+                                                    parent-key="countdown"
+                                                    onchange="setCountDownProperties('navbar_url_action','navbar','navbar_url_action',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Seconds</div>
+                                            <div class="col">
+                                                <input type="number" placeholder="Seconds" class="form-control mb-1"
+                                                    id="navbar_url_action" name="navbar_url_action"
+                                                    parent-key="countdown"
+                                                    onchange="setCountDownProperties('navbar_url_action','navbar','navbar_url_action',this)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item has-submenu settings-li" id="timer_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-21" aria-expanded="false" aria-controls="submenu-21">
+                                        <span class="nav-link-text">Timer</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-21" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Minutes</div>
+                                            <div class="col ">
+                                                <input type="number" placeholder="Minutes" class="form-control mb-1"
+                                                    id="navbar_text" name="navbar_text" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_text','navbar','navbar_text',this)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item has-submenu settings-li" id="input_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-14" aria-expanded="false" aria-controls="submenu-14">
+                                        <span class="nav-link-text">Input</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-14" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Input Type</div>
+                                            <div class="col">
+                                                <select id="input_type" class="form-select mb-1" name="input_type"
+                                                    value="#bada55" parent-key="input"
+                                                    onchange="setInputProperties('input_type','input','input_type',this)">
+                                                    <option selected>Not set</option>
+                                                    <option value="text">Text</option>
+                                                    <option value="number">Number</option>
+                                                    <option value="email">Email</option>
+                                                    <option value="password">Password</option>
+                                                    <option value="range">Range</option>
+                                                    <option value="date">Date</option>
+                                                    <option value="radio">Radio</option>
+                                                    <option value="3">Checkbox</option>
+                                                    <option value="search">Search</option>
+                                                    <option value="reset">Reset</option>
+                                                    <option value="submit">Submit</option>
+                                                    <option value="3">Shipping State</option>
+                                                    <option value="tel">Tel</option>
+                                                    <option value="file">File</option>
+                                                    <option value="image">Image</option>
+                                                    <option value="time">Time</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Name Attribute</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="Enter name" class="form-control mb-1">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Placeholder Text</div>
+                                            <div class="col">
+
+                                                <input type="text" placeholder="Enter email address here"
+                                                    class="form-control mb-1" id="input_placeholder"
+                                                    name="input_placeholder" parent-key="input"
+                                                    onchange="setInputProperties('input_placeholder','input','input_placeholder',this)">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Required</div>
+                                            <div class="col">
+                                                <select class="form-select mb-1 mb-1" id="input_required"
+                                                    name="input_required" parent-key="input"
+                                                    onchange="setInputProperties('input_required','input','input_required',this)">
+                                                    <option selected value="true">True</option>
+                                                    <option value="false">False</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="audio-player-container  ">
+                                            <p class="property-lable">Font size <span class="float-end">30%</span></p>
+                                            <input type="range" class="w-100" id="input_font_range"
+                                                name="input_font_range" parent-key="input"
+                                                onchange="setInputProperties('input_font_range','input','input_font_range',this)">
+                                        </div>
+                                    </div>
+
+                                </li>
+
+
+                                <li class="nav-item has-submenu settings-li" id="textarea_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-15" aria-expanded="false" aria-controls="submenu-15">
+                                        <span class="nav-link-text">TextArea</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-15" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="bg-gray">
+                                            <p class="align-items-center fs-12 p-1 fw-bold">
+                                                Input Name is required to collect information,
+                                                and it accepts letters and numbers only.
+                                            </p>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Textarea Name</div>
+                                            <div class="col">
+
+                                                <input type="text" placeholder="Enter name for textarea"
+                                                    class="form-control mb-1">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Placeholder Text</div>
+                                            <div class="col">
+
+                                                <input type="text" placeholder="Enter your info here"
+                                                    class="form-control mb-1" id="textarea_placeholder"
+                                                    name="textarea_placeholder" parent-key="textarea"
+                                                    onchange="setTextAreaProperties('textarea_placeholder','textarea','textarea_placeholder',this)">
+                                            </div>
+                                        </div>
+                                        <div id="audio-player-container  ">
+                                            <p class="property-lable">Font size <span class="float-end"
+                                                    id="textAreaFontValue">px</span></p>
+                                            <input type="range" class="w-100" id="textarea_font_size"
+                                                name="textarea_font_size" parent-key="textarea"
+                                                onchange="setTextAreaProperties('textarea_font_size','textarea','textarea_font_size',this)">
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Required</div>
+                                            <div class="col">
+                                                <select id="textarea_required" class="form-select mb-1"
+                                                    name="textarea_required" parent-key="textarea"
+                                                    onchange="setTextAreaProperties('textarea_required','textarea','textarea_required',this)">
+                                                    <option selected value="true">True</option>
+                                                    <option value="false">False</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </li>
+
+
+                                <li class="nav-item has-submenu settings-li" id="icon_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-10" aria-expanded="false" aria-controls="submenu-10">
+                                        <span class="nav-link-text">Icon</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-10" class="submenu submenu-1 collapse p-2 "
+                                        data-bs-parent="#menu-accordion" style="">
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Align</div>
+                                            <div class="col">
+
+                                                <select class="form-select mb-1" id="icon_align" name="icon_align"
+                                                    parent-key="icon"
+                                                    onchange="setIconProperties('icon_align','icon','icon_align',this)">
+                                                    <option value="left">Left</option>
+                                                    <option value="center">Center</option>
+                                                    <option value="right">Right</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">URL/Action</div>
+                                            <div class="col">
+
+                                                <input type="text" placeholder="URL / Action" class="form-control mb-1"
+                                                    id="icon_url_action" name="icon_url_action" parent-key="icon"
+                                                    onchange="setIconProperties('icon_url_action','icon','icon_url_action',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">URL Target</div>
+                                            <div class="col">
+                                                <select class="form-select mb-1" id="icon_url_target"
+                                                    name="icon_url_target" parent-key="icon"
+                                                    onchange="setIconProperties('icon_url_target','icon','icon_url_target',this)">
+                                                    <option value="_self">Self</option>
+                                                    <option value="_blank">Blank</option>
+                                                    <option value="_top">Top</option>
+                                                    <option value="_parent">Parent</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Icon Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color-icon " value="#f60808"
+                                                    id="icon_color" name="icon_color" parent-key="icon"
+                                                    onchange="setIconProperties('icon_color','icon','icon_color',this)">
+                                            </div>
+                                        </div>
+                                        <div id="audio-player-container  ">
+                                            <p class="property-lable">Font size <span class="float-end">30%</span></p>
+                                            <input type="range" class="w-100" id="icon_font_size" name="icon_font_size"
+                                                parent-key="icon"
+                                                onchange="setIconProperties('icon_font_size','icon','icon_font_size',this)">
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li class="nav-item has-submenu settings-li" id="video_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-12" aria-expanded="false" aria-controls="submenu-12">
+                                        <span class="nav-link-text">Video</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-12" class="submenu submenu-1 collapse p-2 "
+                                        data-bs-parent="#menu-accordion" style="">
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Video Type</div>
+                                            <div class="col">
+
+                                                <select class="form-select mb-1" id="video_type" name="video_type"
+                                                    parent-key="video"
+                                                    onchange="setVideoProperties('video_type','video','video_type',this)">
+                                                    <option value="custom" selected="selected">Custom Embed</option>
+                                                    <option value="youtube">YouTube</option>
+                                                    <option value="vimeo">Vimeo</option>
+                                                    <option value="wistia">Wistia</option>
+                                                    <option value="evp">EasyVideoSuite</option>
+                                                    <option value="html5">HTML5 Video</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Video Embed </div>
+                                            <div class="col">
+                                                <input type="text" placeholder="Video Embed" class="form-control mb-1"
+                                                    id="video_embed" name="video_embed" parent-key="video"
+                                                    onchange="setVideoProperties('video_embed','video','video_embed',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Overlay Text</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="Click To Join Session In Progress..."
+                                                    class="form-control mb-1" id="video_overlay_text"
+                                                    name="video_overlay_text" parent-key="video"
+                                                    onchange="setVideoProperties('video_overlay_text','video','video_overlay_text',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Title</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="Title" class="form-control mb-1"
+                                                    id="video_title" name="video_title" parent-key="video"
+                                                    onchange="setVideoProperties('video_title','video','video_title',this)">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Bg Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color-icon " name="color"
+                                                    value="#f60808" id="video_bgcolor" name="video_bgcolor"
+                                                    parent-key="video"
+                                                    onchange="setVideoProperties('video_bgcolor','video','video_bgcolor',this)">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Text Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color-icon " name="color"
+                                                    value="#f60808" id="video_textcolor" name="video_textcolor"
+                                                    parent-key="video"
+                                                    onchange="setVideoProperties('video_textcolor','video','video_textcolor',this)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item has-submenu settings-li" id="audio_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-13" aria-expanded="false" aria-controls="submenu-13">
+                                        <span class="nav-link-text">Audio</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-13" class="submenu submenu-1 collapse p-2 "
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Audio File URL</div>
+                                            <div class="col">
+
+                                                <input type="text" placeholder="Audio File URL"
+                                                    class="form-control mb-1" id="audio_fileurl" name="audio_fileurl"
+                                                    parent-key="audio"
+                                                    onchange="setAudioProperties('audio_fileurl','audio','audio_fileurl',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Controls</div>
+                                            <div class="col">
+
+                                                <select class="form-select mb-1" id="audio_controls"
+                                                    name="audio_controls" parent-key="audio"
+                                                    onchange="setAudioProperties('audio_controls','audio','audio_controls',this)">
+                                                    <option value="false" selected="selected">Off</option>
+                                                    <option value="true">On</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">AutoPlay</div>
+                                            <div class="col">
+                                                <select class="form-select mb-1" id="audio_autoplay"
+                                                    name="audio_autoplay" parent-key="audio"
+                                                    onchange="setAudioProperties('audio_autoplay','audio','audio_autoplay',this)">
+                                                    <option value="false" selected="selected">Off</option>
+                                                    <option value="true">On</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Loop</div>
+                                            <div class="col">
+                                                <select class="form-select mb-1" id="audio_loop" name="audio_loop"
+                                                    parent-key="audio"
+                                                    onchange="setAudioProperties('audio_loop','audio','audio_loop',this)">
+                                                    <option value="false" selected="selected">Off</option>
+                                                    <option value="true">On</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item has-submenu settings-li" id="bulletlist_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-11" aria-expanded="false" aria-controls="submenu-11">
+                                        <span class="nav-link-text">Bullet List</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-11" class="submenu submenu-1 collapse p-2 "
+                                        data-bs-parent="#menu-accordion" style="">
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">List Type</div>
+                                            <div class="col">
+
+                                                <select class="form-select mb-1" id="bulletlist_type"
+                                                    name="bulletlist_type" parent-key="bulletlist"
+                                                    onchange="setBulletListProperties('bulletlist_type','bulletlist','bulletlist_type',this)">
+                                                    <option value="icon">Icon List</option>
+                                                    <option value="ordered">Ordered List</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div id="audio-player-container  ">
+                                            <p class="property-lable">Left Margin <span> <i
+                                                        class="fa-solid fa-percent pre_icon "></i> <i
+                                                        class="fa-solid fa-p pre_icon"></i></span> <span
+                                                    class="float-end" id="bullshitLeftMargin">px</span></p>
+                                            <input type="range" class="w-100" id="bulletlist_left_margin_range"
+                                                name="bulletlist_left_margin_range" parent-key="bulletlist"
+                                                onchange="setBulletListProperties('bulletlist_left_margin_range','bulletlist','bulletlist_left_margin_range',this)">
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Icon Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color-icon " value="#f60808"
+                                                    id="bulletlist_iconcolor" name="bulletlist_iconcolor"
+                                                    parent-key="bulletlist"
+                                                    onchange="setBulletListProperties('bulletlist_iconcolor','bulletlist','bulletlist_iconcolor',this)">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Text Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color-icon " value="#f60808"
+                                                    id="bulletlist_textcolor" name="bulletlist_textcolor"
+                                                    parent-key="bulletlist"
+                                                    onchange="setBulletListProperties('bulletlist_textcolor','bulletlist','bulletlist_textcolor',this)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item has-submenu settings-li" id="divider_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-17" aria-expanded="false" aria-controls="submenu-17">
+                                        <span class="nav-link-text">Divider</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-17" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+
+                                        <div id="audio-player-container  ">
+                                            <p class="property-lable">Width <span> <i
+                                                        class="fa-solid fa-percent pre_icon "></i> <i
+                                                        class="fa-solid fa-p pre_icon"></i></span> <span
+                                                    class="float-end" id="dividerWidthValue">%</span></p>
+                                            <input type="range" class="w-100" id="divider_width_range"
+                                                name="divider_width_range" parent-key="divider"
+                                                onchange="setDividerProperties('divider_width_range','divider','divider_width_range',this)">
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Align</div>
+                                            <div class="col">
+                                                <select class="form-select mb-1" id="divider_align" name="divider_align"
+                                                    parent-key="divider"
+                                                    onchange="setDividerProperties('divider_align','divider','divider_align',this)">
+                                                    <option selected value="left">Left</option>
+                                                    <option value="center">Center</option>
+                                                    <option value="right">Right</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Height</div>
+                                            <div class="col">
+                                                <select class="form-select mb-1" id="divider_height"
+                                                    name="divider_height" parent-key="divider"
+                                                    onchange="setDividerProperties('divider_height','divider','divider_height',this)">
+                                                    <option value="1" selected >1px</option>
+                                                    <option value="2">2px</option>
+                                                    <option value="3">3px</option>
+                                                    <option value="4">4px</option>
+                                                    <option value="5">5px</option>
+                                                    <option value="6">10px</option>
+                                                    <option value="7">15px</option>
+                                                    <option value="8">20px</option>
+                                                    <option value="9">25px</option>
+                                                    <option value="10">30px</option>
+                                                    <option value="11">35px</option>
+                                                    <option value="12">40px</option>
+                                                    <option value="13">45px</option>
+                                                    <option value="14">50px</option>
+                                                    <option value="15">55px</option>
+                                                    <option value="16">60px</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Style</div>
+                                            <div class="col">
+                                                <select class="form-select mb-1" id="divider_style" name="divider_style"
+                                                    parent-key="divider"
+                                                    onchange="setDividerProperties('divider_style','divider','divider_style',this)">
+                                                    <option selected value="solid">Solid</option>
+                                                    <option value="dashed">Dashed</option>
+                                                    <option value="dotted">Dotted</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color-icon " value="#f60808"
+                                                    id="divider_color" name="divider_color" parent-key="divider"
+                                                    onchange="setDividerProperties('divider_color','divider','divider_color',this)">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </li>
+
+
+                                <li class="nav-item has-submenu settings-li" id="progressbar_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-18" aria-expanded="false" aria-controls="submenu-18">
+                                        <span class="nav-link-text">Progress Bar</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-18" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Percentage Count</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="Almost Complete..."
+                                                    class="form-control mb-1" id="progressbar_percent"
+                                                    name="progressbar_percent" parent-key="progressbar"
+                                                    onchange="setProgressbarProperties('progressbar_percent','progressbar','progressbar_percent',this)">
+                                            </div>
+                                        </div>
+                                        <div id="audio-player-container  ">
+                                            <p class="property-lable">Width <span> <i
+                                                        class="fa-solid fa-percent pre_icon "></i> <i
+                                                        class="fa-solid fa-p pre_icon"></i></span> <span
+                                                    class="float-end" id="progressbarWidthValue">%</span></p>
+                                            <input type="range" class="w-100" id="progressbar_width_range"
+                                                name="progressbar_width_range" parent-key="progressbar"
+                                                onchange="setProgressbarProperties('progressbar_width_range','progressbar','progressbar_width_range',this)">
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Height</div>
+                                            <div class="col">
+                                                <select class="form-select mb-1" id="progressbar_height"
+                                                    name="progressbar_height" parent-key="progressbar"
+                                                    onchange="setProgressbarProperties('progressbar_height','progressbar','progressbar_height',this)">
+                                                    <option selected>1px</option>
+                                                    <option value="1">2px</option>
+                                                    <option value="2">3px</option>
+                                                    <option value="3">4px</option>
+                                                    <option value="4">5px</option>
+                                                    <option value="5">10px</option>
+                                                    <option value="6">15px</option>
+                                                    <option value="7">20px</option>
+                                                    <option value="8">25px</option>
+                                                    <option value="9">30px</option>
+                                                    <option value="10">35px</option>
+                                                    <option value="11">40px</option>
+                                                    <option value="12">45px</option>
+                                                    <option value="13">50px</option>
+                                                    <option value="14">55px</option>
+                                                    <option value="15">60px</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Color</div>
+                                            <div class="col">
+                                                <input type="color" class="float-end-color-icon " value="#f60808"
+                                                    id="progressbar_color" name="progressbar_color"
+                                                    parent-key="progressbar"
+                                                    onchange="setProgressbarProperties('progressbar_color','progressbar','progressbar_color',this)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item has-submenu settings-li" id="navbar_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-19" aria-expanded="false" aria-controls="submenu-19">
+                                        <span class="nav-link-text">Navbar</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-19" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Link Text</div>
+                                            <div class="col">
+
+                                                <input type="text" placeholder="Link URL" class="form-control mb-1"
+                                                    id="navbar_text" name="navbar_text" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_text','navbar','navbar_text',this)">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Link URL</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="URL / Action" class="form-control mb-1"
+                                                    id="navbar_url_action" name="navbar_url_action" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_url_action','navbar','navbar_url_action',this)">
+                                            </div>
+
+                                            <div class="row mb-1 align-items-center">
+                                                <div class="col fs-12">Link Target</div>
+                                                <div class="col">
+                                                    <select class="form-select mb-1" id="navbar_link_target"
+                                                        name="navbar_link_target" parent-key="navbar"
+                                                        onchange="setNavbarProperties('navbar_link_target','navbar','navbar_link_target',this)">
+                                                        <option selected value="_blank">Blank</option>
+                                                        <option value="_self">Self</option>
+                                                        <option value="_top">Top</option>
+                                                        <option value="_parent">Parent</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row mb-1 align-items-center">
+                                                <div class="col fs-12">Link Color</div>
+                                                <div class="col">
+                                                    <input type="color" class="float-end-color-icon " value="#f60808"
+                                                        id="navbar_color" name="navbar_color" parent-key="navbar"
+                                                        onchange="setNavbarProperties('navbar_color','navbar','navbar_color',this)">
+                                                </div>
+                                            </div>
+                                </li>
+                                <li class="nav-item has-submenu settings-li" id="social_icon_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-20" aria-expanded="false" aria-controls="submenu-20">
+                                        <span class="nav-link-text">Social Icon</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-20" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Facebook Link</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="Link URL" class="form-control mb-1"
+                                                    id="navbar_text" name="navbar_text" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_text','navbar','navbar_text',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Instagram Link</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="Link URL" class="form-control mb-1"
+                                                    id="navbar_text" name="navbar_text" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_text','navbar','navbar_text',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">LinkedIn Link</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="Link URL" class="form-control mb-1"
+                                                    id="navbar_text" name="navbar_text" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_text','navbar','navbar_text',this)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item has-submenu settings-li" id="select_input_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-21" aria-expanded="false" aria-controls="submenu-21">
+                                        <span class="nav-link-text">Option Value</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-21" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Option One</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="option one" class="form-control mb-1"
+                                                    id="navbar_text" name="navbar_text" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_text','navbar','navbar_text',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Option Two</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="option two" class="form-control mb-1"
+                                                    id="navbar_text" name="navbar_text" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_text','navbar','navbar_text',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Option Three</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="option three" class="form-control mb-1"
+                                                    id="navbar_text" name="navbar_text" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_text','navbar','navbar_text',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Option Four</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="option four" class="form-control mb-1"
+                                                    id="navbar_text" name="navbar_text" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_text','navbar','navbar_text',this)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item has-submenu settings-li" id="icon_link_setting">
+                                    <a class="nav-link submenu-toggle collapsed" href="#" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu-22" aria-expanded="false" aria-controls="submenu-22">
+                                        <span class="nav-link-text">Link</span>
+                                        <span class="submenu-arrow">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </span>
+                                    </a>
+                                    <div id="submenu-22" class="submenu submenu-1 collapse   p-2"
+                                        data-bs-parent="#menu-accordion" style="">
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Link</div>
+                                            <div class="col">
+                                                <input type="text" placeholder="Link URL" class="form-control mb-1"
+                                                    id="navbar_text" name="navbar_text" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_text','navbar','navbar_text',this)">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-1 align-items-center">
+                                            <div class="col fs-12">Link Target</div>
+                                            <div class="col">
+                                                <select class="form-select mb-1" id="navbar_link_target"
+                                                    name="navbar_link_target" parent-key="navbar"
+                                                    onchange="setNavbarProperties('navbar_link_target','navbar','navbar_link_target',this)">
+                                                    <option selected value="_blank">Blank</option>
+                                                    <option value="_self">Self</option>
+                                                    <option value="_top">Top</option>
+                                                    <option value="_parent">Parent</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+        </div>
+        </nav>
+        <!--//app-nav-->
+        <!--//app-sidepanel-footer-->
+    </div>
+    </div>
+
+
+
+    </div>
+
+
+
+
+    <!-- az-content -->
+    <!--   <div class="az-footer ht-40">
+           <div class="container ht-100p pd-t-0-f">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © ecsion 2020</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="3" target="_blank">Admin</a> from Ecsion</span>
+           </div>
+           
+           </div> -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Section</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-icon-wraper">
+                    <div class="card">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-01.svg" alt=""></i>
+                            <p class="card-text"> 1 column </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-02.svg" alt=""></i>
+                            <p class="card-text"> 2 column </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-03.svg" alt=""></i>
+                            <p class="card-text">3 column </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-04.svg" alt=""></i>
+                            <p class="card-text"> 2 column</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /modal1 -->
+    <!-- modal2 -->
+    <div class="modal modal_two fade" id="addRowModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-icon-wraper">
+                    <div class="card" onclick="addColumns(this,'1')">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-01.svg" alt=""></i>
+                            <p class="card-text"> 1 column </p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="addColumns(this,'2')">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-02.svg" alt=""></i>
+                            <p class="card-text"> 2 column </p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="addColumns(this,'3')">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-03.svg" alt=""></i>
+                            <p class="card-text">3 column </p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="addColumns(this,'4')">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-04.svg" alt=""></i>
+                            <p class="card-text"> 4 column</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" class="btn btn-sm btn-primary hide" id="choose_columns_dialog" type="" type-
+                        section- section-un />
+                    <!--<button type="button" class="btn btn-sm btn-primary" id="choose_columns_dialog" type="" type- section- section-un>Add</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /modal2 -->
+    <!-- modal3 -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-icon-wraper">
+                    <div class="card">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-01.svg" alt=""></i>
+                            <p class="card-text"> 1 column </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-02.svg" alt=""></i>
+                            <p class="card-text"> 2 column </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-03.svg" alt=""></i>
+                            <p class="card-text">3 column </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <i><img src="img/icon/shape-04.svg" alt=""></i>
+                            <p class="card-text"> 2 column</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /modal3 -->
+    <!-- modal4 -->
+    <div class="modal fade" id="addNewElement" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="col">
+                        <h5>Text</h5>
+                    </div>
+                    <div class="modal-icon-wraper">
+                        <div class="card element_div1" template="tem_headline" type="" type- section- section-un
+                            column="" onclick="addHeadParaElement(this,'tem_headline')">
+                            <div class="card-body">
+                                <i><img src="img/icon/hedline.svg" alt=""></i>
+                                <p class="card-text"> Headline </p>
+                            </div>
+                        </div>
+                        <div class="card " template="tem_sub_headline" type="" type- section- section-un column=""
+                            onclick="addHeadParaElement(this,'tem_sub_headline')">
+                            <div class="card-body">
+                                <i><img src="img/icon/sub-hedline.svg" alt=""></i>
+                                <p class="card-text"> Sub-headline </p>
+                            </div>
+                        </div>
+                        <div class="card " template="tem_paragraph" onclick="addHeadParaElement(this,'tem_paragraph')">
+                            <div class="card-body">
+                                <i><img src="img/icon/paragraph.svg" alt=""></i>
+                                <p class="card-text"> Paragraph </p>
+                            </div>
+                        </div>
+                        <div class="card " template="tem_bullet_line" type="" type- section- section-un column=""
+                            onclick="addHeadParaElement(this,'tem_bullet_line')">
+                            <div class="card-body">
+                                <i><img src="img/icon/bullet-list.svg" alt=""></i>
+                                <p class="card-text"> Bullet List </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addHeadParaElement(this,'tem_quotes')">
+                            <div class="card-body">
+                                <i><img src="img/icon/quote.svg" alt=""></i>
+                                <p class="card-text"> Quote </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Media</h5>
+                    </div>
+                    <div class="modal-icon-wraper">
+                        <div class="card" onclick="addImageElement(this,'tem_image')">
+                            <div class="card-body">
+                                <i><img src="img/icon/image.svg" alt=""></i>
+                                <p class="card-text"> Image </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addImageElement(this,'tem_imagepopup')">
+                            <div class="card-body">
+                                <i><img src="img/icon/image-poup.svg" alt=""></i>
+                                <p class="card-text"> Image Popup </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addVideoElement(this,'tem_video')">
+                            <div class="card-body">
+                                <i><img src="img/icon/video.svg" alt=""></i>
+                                <p class="card-text"> Video </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addVideoElement(this,'tem_videopopup')">
+                            <div class="card-body">
+                                <i><img src="img/icon/video-popup.svg" alt=""></i>
+                                <p class="card-text"> Video Popup </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addAudioPlayerElement(this,'tem_audioplayer')">
+                            <div class="card-body">
+                                <i><img src="img/icon/audio-player.svg" alt=""></i>
+                                <p class="card-text"> Audio Player </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Form</h5>
+                    </div>
+                    <div class="modal-icon-wraper">
+                        <div class="card" onclick="addFormElement(this,'tem_button')">
+                            <div class="card-body">
+                                <i><img src="img/icon/button.svg" alt=""></i>
+                                <p class="card-text"> Button </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addFacebookButtonElement(this,'tem_fbbutton')">
+                            <div class="card-body">
+                                <i><img src="img/icon/facebook-optin.svg" alt=""></i>
+                                <p class="card-text"> Facebook Optin </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addFormElement(this,'tem_input')">
+                            <div class="card-body">
+                                <i><img src="img/icon/input.svg" alt=""></i>
+                                <p class="card-text"> Input </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addFormElement(this,'tem_selectbox')">
+                            <div class="card-body">
+                                <i><img src="img/icon/select-box.svg" alt=""></i>
+                                <p class="card-text"> Select Box </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addFormElement(this,'tem_textarea')">
+                            <div class="card-body">
+                                <i><img src="img/icon/text-area.svg" alt=""></i>
+                                <p class="card-text"> Text Area </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addFormElement(this,'tem_checkbox')">
+                            <div class="card-body">
+                                <i><img src="img/icon/checkbox-headline.svg" alt=""></i>
+                                <p class="card-text"> Checkbox Headline </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Advanced Form</h5>
+                    </div>
+                    <div class="modal-icon-wraper">
+                        <div class="card" onclick="addAdvanceFormElement(this,'tem_smssignup')">
+                            <div class="card-body">
+                                <i><img src="img/icon/sms-sign-up.svg" alt=""></i>
+                                <p class="card-text"> SMS Sign Up </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addAdvanceFormElement(this,'tem_billingadd')">
+                            <div class="card-body">
+                                <i><img src="img/icon/billing-add.svg" alt=""></i>
+                                <p class="card-text"> Billing Add. </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addAdvanceFormElement(this,'tem_shippingadd')">
+                            <div class="card-body">
+                                <i><img src="img/icon/shippping-add.svg" alt=""></i>
+                                <p class="card-text"> Shipping Add. </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addAdvanceFormElement(this,'tem_survey')">
+                            <div class="card-body">
+                                <i><img src="img/icon/survey.svg" alt=""></i>
+                                <p class="card-text"> Survey </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Countdown</h5>
+                    </div>
+                    <div class="modal-icon-wraper">
+                        <div class="card" onclick="addCountdownElement(this,'tem_countdown')">
+                            <div class="card-body">
+                                <i><img src="img/icon/countdown.svg" alt=""></i>
+                                <p class="card-text"> Countdown 2.0 </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addCountdownElement(this,'tem_minutetimer')">
+                            <div class="card-body">
+                                <i><img src="img/icon/minute-timer.svg" alt=""></i>
+                                <p class="card-text"> Minute Timer </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Content Block</h5>
+                    </div>
+                    <div class="modal-icon-wraper">
+                        <div class="card" onclick="addIconElement(this,'tem_icon')">
+                            <div class="card-body">
+                                <i><img src="img/icon/icon.svg" alt=""></i>
+                                <p class="card-text"> Icon </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addImageFeatureElement(this,'tem_image_feature')">
+                            <div class="card-body">
+                                <i><img src="img/icon/image-feature.svg" alt=""></i>
+                                <p class="card-text"> Image Feature </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addNavigationElement(this,'tem_navigation')">
+                            <div class="card-body">
+                                <i><img src="img/icon/navigation.svg" alt=""></i>
+                                <p class="card-text"> Navigation </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addFAQElement(this,'tem_faq')">
+                            <div class="card-body">
+                                <i><img src="img/icon/faq.svg" alt=""></i>
+                                <p class="card-text"> FAQ </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addDividerElement(this,'tem_divider')">
+                            <div class="card-body">
+                                <i><img src="img/icon/divider.svg" alt=""></i>
+                                <p class="card-text"> Divider </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addProgressBarElement(this,'tem_progress_bar')">
+                            <div class="card-body">
+                                <i><img src="img/icon/progress-bar.svg" alt=""></i>
+                                <p class="card-text"> Progress Bar </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addImageListElement(this,'tem_image_list')">
+                            <div class="card-body">
+                                <i><img src="img/icon/image-list.svg" alt=""></i>
+                                <p class="card-text"> Image List </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addPricingTableElement(this,'tem_pricing_table')">
+                            <div class="card-body">
+                                <i><img src="img/icon/pricing-table.svg" alt=""></i>
+                                <p class="card-text"> Pricing Table </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5>Content Block</h5>
+                    </div>
+                    <div class="modal-icon-wraper">
+                        <div class="card" onclick="addSocialShareElement(this,'tem_social_share')">
+                            <div class="card-body">
+                                <i><img src="img/icon/social-share.svg" alt=""></i>
+                                <p class="card-text"> Social Share </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addPrivacyNoticeElement(this,'tem_privacy_notice')">
+                            <div class="card-body">
+                                <i><img src="img/icon/privacy-notice.svg" alt=""></i>
+                                <p class="card-text"> Privacy Notice </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addFBCommentsElement(this,'tem_fb_comments')">
+                            <div class="card-body">
+                                <i><img src="img/icon/fb-comments.svg" alt=""></i>
+                                <p class="card-text"> FB Comments </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addTextBlockElement(this,'tem_text_block')">
+                            <div class="card-body">
+                                <i><img src="img/icon/text-block.svg" alt=""></i>
+                                <p class="card-text"> Text Block </p>
+                            </div>
+                        </div>
+                        <div class="card" onclick="addCustomJshtmlElement(this,'tem_custom_js_html')">
+                            <div class="card-body">
+                                <i><img src="img/icon/custom-js-html.svg" alt=""></i>
+                                <p class="card-text"> Custom js-html </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="hidden" class="btn btn-sm btn-primary hide" id="choose_elements_dialog" type="" type-
+                        section- section-un>Add</button>
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-sm btn-primary" id="choose_elements_dialog" type="" type- section- section-un>Add</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /modal4 -->
+
+    <!-- /image popup model -->
+    <div class="modal fade" id="imagePopupModal" tabindex="-1" aria-labelledby="imagePopupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="imagePopupModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.pexels.com/photos/16053783/pexels-photo-16053783.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                        class="modal-img img-fluid" alt="...">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /image popup model -->
+
+    <!-- /video popup model -->
+    <div class="modal fade" id="videoPopupModal" tabindex="-1" aria-labelledby="videoPopupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="videoPopupLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" allowtransparency="true" frameborder="0"
+                        scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen
+                        webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="349"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /video popup model -->
+
+    <!-- az-footer -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/azia.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <!--<script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>-->
+    <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+
+
+
+    <!-- code editore -->
+    <script src="https://cdn.jsdelivr.net/npm/ace-builds@1.17.0/src-min-noconflict/ace.min.js" type="text/javascript"
+        charset="utf-8"></script>
+
+
+    <script src="js/page_actions.js"></script>
+</body>
+
+
+</html>

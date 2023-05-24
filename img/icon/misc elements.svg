@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="119" viewBox="0 0 119 119">
+  <g id="misc_elements_" data-name="misc elements " transform="translate(-30 -31)">
+    <g id="Group_1" data-name="Group 1" opacity="0">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="119" height="119" transform="translate(30 31)" fill="#fff"/>
+    </g>
+    <g id="Group_326" data-name="Group 326" transform="translate(-262 -1715)">
+      <g id="Group_298" data-name="Group 298" transform="translate(313.793 1795.5)">
+        <line id="Line_34" data-name="Line 34" y1="23" x2="14" transform="translate(3.707 -1)" fill="none" stroke="#b3b3b3" stroke-linecap="round" stroke-width="2"/>
+        <path id="Path_6278" data-name="Path 6278" d="M0,0,19.8,22.264" transform="translate(27.707 -4)" fill="none" stroke="#b3b3b3" stroke-linecap="round" stroke-width="2"/>
+        <path id="Path_6279" data-name="Path 6279" d="M31.107,1.9,15.042,23.833" transform="translate(40.707 -4)" fill="none" stroke="#b3b3b3" stroke-linecap="round" stroke-width="2"/>
+      </g>
+      <g id="Group_300" data-name="Group 300" transform="translate(305 1816)">
+        <g id="Group_299" data-name="Group 299">
+          <g id="Ellipse_320" data-name="Ellipse 320" transform="translate(0 0)" fill="none" stroke="#b3b3b3" stroke-width="2">
+            <circle cx="8.5" cy="8.5" r="8.5" stroke="none"/>
+            <circle cx="8.5" cy="8.5" r="7.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_301" data-name="Group 301" transform="translate(326.586 1778)">
+        <g id="Group_299-2" data-name="Group 299">
+          <g id="Ellipse_320-2" data-name="Ellipse 320" transform="translate(0.414 0)" fill="none" stroke="#b3b3b3" stroke-width="2">
+            <circle cx="8.5" cy="8.5" r="8.5" stroke="none"/>
+            <circle cx="8.5" cy="8.5" r="7.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_302" data-name="Group 302" transform="translate(350.586 1812)">
+        <g id="Group_299-3" data-name="Group 299" transform="translate(4 1)">
+          <g id="Ellipse_320-3" data-name="Ellipse 320" transform="translate(0.414 0)" fill="none" stroke="#b3b3b3" stroke-width="2">
+            <circle cx="8.5" cy="8.5" r="8.5" stroke="none"/>
+            <circle cx="8.5" cy="8.5" r="7.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_328" data-name="Group 328" transform="translate(376.586 1777)">
+        <g id="Group_299-4" data-name="Group 299" transform="translate(4 1)">
+          <g id="Ellipse_320-4" data-name="Ellipse 320" transform="translate(0.414 0)" fill="none" stroke="#b3b3b3" stroke-width="2">
+            <circle cx="8.5" cy="8.5" r="8.5" stroke="none"/>
+            <circle cx="8.5" cy="8.5" r="7.5" fill="none"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

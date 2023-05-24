@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="119" viewBox="0 0 119 119">
+  <g id="video" transform="translate(-30 -31)">
+    <g id="Group_1" data-name="Group 1" opacity="0">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="119" height="119" transform="translate(30 31)" fill="#fff"/>
+    </g>
+    <g id="Group_310" data-name="Group 310" transform="translate(-267 -547.986)">
+      <g id="Rectangle_14" data-name="Rectangle 14" transform="translate(310 605.986)" fill="none" stroke="#b3b3b3" stroke-width="2">
+        <rect width="92" height="65" rx="12" stroke="none"/>
+        <rect x="1" y="1" width="90" height="63" rx="11" fill="none"/>
+      </g>
+      <g id="Path_6061" data-name="Path 6061" transform="matrix(0.719, -0.695, 0.695, 0.719, 324.642, 637.293)" fill="none">
+        <path d="M24.078,0l9.707,34.529L0,24.934Z" stroke="none"/>
+        <path d="M 23.09610939025879 3.896232604980469 L 3.757556915283203 23.92188262939453 L 30.89212799072266 31.62806701660156 L 23.09610939025879 3.896232604980469 M 24.07832527160645 3.814697265625e-06 L 33.78510665893555 34.52876281738281 L -3.814697265625e-06 24.93383407592773 L 24.07832527160645 3.814697265625e-06 Z" stroke="none" fill="#b3b3b3"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="119" viewBox="0 0 119 119">
+  <g id="pricing_table" data-name="pricing table" transform="translate(-30 -31)">
+    <g id="Group_1" data-name="Group 1" opacity="0">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="119" height="119" transform="translate(30 31)" fill="#fff"/>
+    </g>
+    <g id="Group_325" data-name="Group 325" transform="translate(0 -1724)">
+      <g id="Rectangle_25" data-name="Rectangle 25" transform="translate(44 1782)" fill="#fff" stroke="#b3b3b3" stroke-width="2">
+        <rect width="92" height="66" stroke="none"/>
+        <rect x="1" y="1" width="90" height="64" fill="none"/>
+      </g>
+      <g id="Group_294" data-name="Group 294" transform="translate(54.563 1789.922)">
+        <g id="Rectangle_26" data-name="Rectangle 26" transform="translate(0.437 0.078)" fill="#fff" stroke="#b3b3b3" stroke-width="2">
+          <rect width="33" height="22" stroke="none"/>
+          <rect x="1" y="1" width="31" height="20" fill="none"/>
+        </g>
+        <g id="Rectangle_33" data-name="Rectangle 33" transform="translate(0.437 28.078)" fill="#fff" stroke="#b3b3b3" stroke-width="2">
+          <rect width="33" height="22" stroke="none"/>
+          <rect x="1" y="1" width="31" height="20" fill="none"/>
+        </g>
+        <g id="Rectangle_31" data-name="Rectangle 31" transform="translate(39.437 0.078)" fill="#fff" stroke="#b3b3b3" stroke-width="2">
+          <rect width="33" height="22" stroke="none"/>
+          <rect x="1" y="1" width="31" height="20" fill="none"/>
+        </g>
+        <g id="Rectangle_32" data-name="Rectangle 32" transform="translate(39.437 28.078)" fill="#fff" stroke="#b3b3b3" stroke-width="2">
+          <rect width="33" height="22" stroke="none"/>
+          <rect x="1" y="1" width="31" height="20" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

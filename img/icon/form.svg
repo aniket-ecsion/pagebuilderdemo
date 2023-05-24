@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="119" viewBox="0 0 119 119">
+  <g id="form" transform="translate(-30 -31)">
+    <g id="Group_1" data-name="Group 1" opacity="0">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="119" height="119" transform="translate(30 31)" fill="#fff"/>
+    </g>
+    <g id="Group_312" data-name="Group 312" transform="translate(-140.65 -760.567)">
+      <path id="file-alt" d="M50.774,43.722v4.936a2.122,2.122,0,0,1-2.116,2.116H19.04a2.122,2.122,0,0,1-2.116-2.116V43.722a2.122,2.122,0,0,1,2.116-2.116H48.659A2.122,2.122,0,0,1,50.774,43.722ZM48.659,56.416H19.04a2.122,2.122,0,0,0-2.116,2.116v4.936a2.122,2.122,0,0,0,2.116,2.116H48.659a2.122,2.122,0,0,0,2.116-2.116V58.532A2.122,2.122,0,0,0,48.659,56.416ZM67.7,23.254V81.8a8.465,8.465,0,0,1-8.462,8.462H8.462A8.465,8.465,0,0,1,0,81.8V8.462A8.465,8.465,0,0,1,8.462,0H44.445a8.463,8.463,0,0,1,5.977,2.486L65.213,17.277A8.432,8.432,0,0,1,67.7,23.254ZM50.062,3.4V16.815H63.479l-3.24-3.24L50.062,3.4Z" transform="translate(196.301 805.934)" fill="none" stroke="#b3b3b3" stroke-width="2"/>
+      <g id="Rectangle_15" data-name="Rectangle 15" transform="translate(212 832.401)" fill="none" stroke="#b3b3b3" stroke-width="2">
+        <rect width="36" height="11" rx="4" stroke="none"/>
+        <rect x="1" y="1" width="34" height="9" rx="3" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

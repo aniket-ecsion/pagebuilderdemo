@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="119" height="119" viewBox="0 0 119 119">
+  <g id="shape-03" transform="translate(-30 -31)">
+    <g id="Group_1" data-name="Group 1" opacity="0">
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="119" height="119" transform="translate(30 31)" fill="#fff"/>
+    </g>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(41 44)" fill="none" stroke="#b3b3b3" stroke-width="2">
+      <rect width="13" height="98" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="11" height="96" rx="2" fill="none"/>
+    </g>
+    <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(90 44)" fill="none" stroke="#b3b3b3" stroke-width="2">
+      <rect width="13" height="98" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="11" height="96" rx="2" fill="none"/>
+    </g>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(58 44)" fill="none" stroke="#b3b3b3" stroke-width="2">
+      <rect width="12" height="98" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="10" height="96" rx="2" fill="none"/>
+    </g>
+    <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(107 44)" fill="none" stroke="#b3b3b3" stroke-width="2">
+      <rect width="12" height="98" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="10" height="96" rx="2" fill="none"/>
+    </g>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(74 44)" fill="none" stroke="#b3b3b3" stroke-width="2">
+      <rect width="13" height="98" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="11" height="96" rx="2" fill="none"/>
+    </g>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(123 44)" fill="none" stroke="#b3b3b3" stroke-width="2">
+      <rect width="13" height="98" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="11" height="96" rx="2" fill="none"/>
+    </g>
+  </g>
+</svg>
